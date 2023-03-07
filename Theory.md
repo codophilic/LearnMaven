@@ -105,6 +105,7 @@
 
 ![](https://github.com/codophilic/LearnMaven/blob/main/Images/1.jpg)
 
+- The local repository is located at  `c:\Users\UserID\.m2\repository`.
 
 
 
