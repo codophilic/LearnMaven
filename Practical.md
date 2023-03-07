@@ -48,6 +48,10 @@
 
 - These archetypes can be created using Maven CLI or IDE's like eclipse, Netbeans,, IntelliJ etc.
 
+## QuickStart
+
+- This folder consists of basic maven quickstart directory structure for a standalone project with JAR file as output.
+
 
 
 
