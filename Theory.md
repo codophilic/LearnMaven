@@ -97,7 +97,13 @@
 - The output of the Maven build process depends on the specific programming language and technology being used. For compiled languages like C and C++, the output is typically an executable binary file. For interpreted languages like JavaScript, the output is typically a minified and optimized source code file. For mobile platforms like Android, the output is typically an APK file that can be installed on a mobile device. For .NET it isi DLL or exe file.
 
 
+## Maven Central repository
 
+- Maven has a central repository, which is a shared repository of Java libraries and dependencies that can be accessed by developers around the world. This central repository serves as the default source of dependencies for Maven projects, and contains millions of artifacts that can be searched, downloaded, and used in Maven projects.
+
+- The central repository works similarly to Docker Hub, which is a central registry for Docker images. Both repositories provide a centralized location for storing and sharing dependencies and artifacts, and allow developers to easily download and use these dependencies in their projects.
+
+![](https://github.com/codophilic/LearnMaven/blob/main/Images/1.jpg)
 
 
 
