@@ -21,7 +21,7 @@
 
   <dependencies>
 	 <!-- 
-	 Requirs servvlet and Jsp dependencies
+	 Requirs servlet and Jsp dependencies
 	 -->
 	 <!-- https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
 	<dependency>
