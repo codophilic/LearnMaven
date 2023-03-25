@@ -32,19 +32,19 @@
 
 - A minimal POM file typically includes the following elements:
 
-1. **<project>** : This is the root element of the POM file and defines the basic information about the project, such as its group ID, artifact ID, and version.
+1. **project** : This is the root element of the POM file and defines the basic information about the project, such as its group ID, artifact ID, and version.
 
-2. **<modelVersion>** : This element specifies the version of the POM file format being used. In the case of Maven 2 and Maven 3, this is usually set to "4.0.0".
+2. **modelVersion** : This element specifies the version of the POM file format being used. In the case of Maven 2 and Maven 3, this is usually set to "4.0.0".
 
-3. **<groupId>** : This element specifies the unique identifier for the group or organization that the project belongs to.
+3. **groupId** : This element specifies the unique identifier for the group or organization that the project belongs to.
 
-4. **<artifactId>** : This element specifies the unique identifier for the project itself.
+4. **artifactId** : This element specifies the unique identifier for the project itself.
 
-5. **<version>** : This element specifies the version number of the project.
+5. **version** : This element specifies the version number of the project.
 
-6. **<packaging>** : This element specifies the type of artifact that the project produces, such as "jar" (default), "war", "pom", etc.
+6. **packaging** : This element specifies the type of artifact that the project produces, such as "jar" (default), "war", "pom", etc.
 
-7. **<dependencies>** : This element specifies the dependencies that the project relies on.
+7. **dependencies** : This element specifies the dependencies that the project relies on.
 
 - Example
 
@@ -74,7 +74,7 @@
 
 - By using project inheritance, you can easily manage dependencies and configurations across multiple Maven projects, reduce duplication of code and settings, and maintain consistency across projects.
 
--  The Super POM is one example of project inheritance, however you can also introduce your own parent POMs by specifying the parent element in the POM, as demonstrated in the following examples. Here <parent></parent> tags is used.
+-  The Super POM is one example of project inheritance, however you can also introduce your own parent POMs by specifying the parent element in the POM, as demonstrated in the following examples. Here`<parent></parent>` tags is used.
 
 - The packaging type of parent POM is **pom**.
 
@@ -128,7 +128,7 @@
 
 - So project inheritance is a hierarchical relationship between parent and child projects, while project aggregation is more like a logical grouping of projects that share some common functionality or configuration.
 
-- To defined multi child project we used <module></module> tag. The parent pom has a **pom** packaging type.
+- To defined multi child project we used `<module></module>` tag. The parent pom has a **pom** packaging type.
 
 - The purpose of defining modules in the parent POM is to specify which child projects belong to the multi-module build. This allows the parent POM to manage the build for all the child projects and ensure that they are built in the correct order.
 
@@ -136,8 +136,29 @@
 
 - Defining modules is an essential part of the project aggregation process because it allows the parent POM to manage the build for all the child projects and ensure that they are built in the correct order. Without this hierarchy, it would be difficult to manage the dependencies and plugins for all the child projects, and the build process would become more complex.
 
+## Project Interpolation and Variables
 
+- Project Interpolation is the ability of Maven to replace variables (also called properties) in POM files and other configuration files with their corresponding values at runtime. Variables can be defined in different ways, such as in the POM file itself, in the Maven settings file, or passed as command line arguments.
 
+- Variables are useful for defining values that are used throughout a project, such as the version number of a project, the name of an organization, or the path to a particular file. By using variables, you can avoid hard-coding values in multiple places and make it easier to maintain consistency across the project.
+
+- In Maven, variables are defined in the `<properties>` section of the POM file. This section contains key-value pairs, where the key is the variable name and the value is the variable's value. Once defined, variables can be referenced anywhere in the POM using the ${variableName} syntax.
+
+- Example
+
+```
+<properties>
+  <project.version>1.0.0</project.version>
+</properties>
+
+<dependencies>
+  <dependency>
+    <groupId>com.example</groupId>
+    <artifactId>my-project</artifactId>
+    <version>${project.version}</version>
+  </dependency>
+</dependencies>
+```
 
 
 

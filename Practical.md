@@ -115,7 +115,7 @@
 ```
 - In this example, the junit library is declared as a test dependency. This library provides a testing framework for writing and running unit tests on the project.
 
-6. System dependencies: These are dependencies that are not available in any public repository, but are available on the local file system or network. They are specified in the pom.xml file with a <systemPath> element.
+6. System dependencies: These are dependencies that are not available in any public repository, but are available on the local file system or network. They are specified in the pom.xml file with a `<systemPath>` element.
 
 ```
 <dependencies>
@@ -166,7 +166,7 @@
 
 - Dependencies scopes are required in Maven to define the scope of a particular dependency and how it should be used in the project. This is important because not all dependencies are needed at every phase of a project's lifecycle, and using unnecessary dependencies can increase the project's size and complexity.
 
-- These scopes are defined using **<scope></scope>** tags.
+- These scopes are defined using `<scope></scope>` tags.
 
 - Example
 
