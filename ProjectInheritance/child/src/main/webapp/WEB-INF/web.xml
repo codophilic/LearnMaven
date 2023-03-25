@@ -1,0 +1,17 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>CheckString</servlet-name>
+  	<display-name>CheckString</display-name>
+  	<description></description>
+  	<servlet-class>CheckString.CheckString</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CheckString</servlet-name>
+  	<url-pattern>/CheckString</url-pattern>
+  </servlet-mapping>
+</web-app>
