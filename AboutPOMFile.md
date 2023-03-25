@@ -85,9 +85,9 @@
 ```
 .
  |-- my-module
- |   `-- pom.xml
- `-- parent
-     `-- pom.xml
+ |   \-- pom.xml
+ \-- parent
+     \-- pom.xml
 ```
 
 - POM File
