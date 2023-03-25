@@ -58,7 +58,7 @@
     <packaging>jar</packaging>
 
     <dependencies>
-        <!-- specify dependencies here -->
+        ..
     </dependencies>
 </project>
 ```
