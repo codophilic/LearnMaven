@@ -212,6 +212,6 @@
 
 ## About POM file
 
-- Refer AboutPOMFile ![markdown](https://github.com/codophilic/LearnMaven/blob/main/AboutPOMFile.md)
+- Refer AboutPOMFile [markdown](https://github.com/codophilic/LearnMaven/blob/main/AboutPOMFile.md)
 
 
