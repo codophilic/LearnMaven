@@ -67,6 +67,7 @@
 
 ```
 
+
 ## Project Inheritance
 
 - In Maven, project inheritance allows you to define a parent-child relationship between Maven projects by specifying a parent POM for a child project. This enables you to share common configurations, dependencies, and plugins across multiple Maven projects, reducing redundancy and simplifying project management.
@@ -74,6 +75,8 @@
 - By using project inheritance, you can easily manage dependencies and configurations across multiple Maven projects, reduce duplication of code and settings, and maintain consistency across projects.
 
 -  The Super POM is one example of project inheritance, however you can also introduce your own parent POMs by specifying the parent element in the POM, as demonstrated in the following examples. Here <parent></parent> tags is used.
+
+- The packaging type of parent POM is **pom**.
 
 - Example
 
@@ -103,7 +106,35 @@
   <artifactId>my-module</artifactId>
 </project>
 ```
+## Project Aggregation
 
+- In project aggregation, we have a parent project that aggregates multiple child projects. The parent project contains a POM file that defines common settings, such as dependency management and build configuration, that are shared by all of the child projects.
+
+- Each child project also has its own POM file that references the parent POM file. This establishes a parent-child relationship between the parent project and its child projects.
+
+- Now, when we build the parent project, it also builds all of its child projects. This means that all of the child projects inherit the common settings defined in the parent POM file.
+
+- In summary, project aggregation allows us to manage multiple related projects as a single entity, while still maintaining a parent-child relationship between the parent project and its child projects. The parent project defines common settings that are shared by all of the child projects, and the child projects inherit these settings from the parent project.
+
+- In project aggregation, you can define all the dependencies in the parent POM and don't define any dependencies in the child POMs. Instead, you define the modules for each child project in the parent POM and inherit the parent POM in the child projects. This way, the child projects can inherit all the common configurations and dependencies from the parent POM without having to define them again in their own POMs.
+
+- Project inheritance is a specific type of project aggregation, where there is a single parent-child relationship between projects. When you have more than one project that share common settings and dependencies, you can use project aggregation to group them together under a common parent project.
+
+- Project aggregation can be seen as a higher-level concept that includes project inheritance as a specific use case. It allows you to manage multiple projects together, share common settings and dependencies, and simplify management. Project inheritance, on the other hand, is useful when you have a specific parent-child relationship between two projects, and you want to inherit some settings and dependencies from the parent project.
+
+- Project inheritance is like a multi-level inheritance, where each child project inherits settings and dependencies from its parent project, and the parent project can also inherit settings and dependencies from its own parent project.
+
+- On the other hand, project aggregation is like multiple inheritance , grouping multiple projects together under a common parent project. Each child project still has its own independent settings and dependencies, but they can also share common settings and dependencies defined in the parent project.
+
+- So project inheritance is a hierarchical relationship between parent and child projects, while project aggregation is more like a logical grouping of projects that share some common functionality or configuration.
+
+- To defined multi child project we used <module></module> tag. The parent pom has a **pom** packaging type.
+
+- The purpose of defining modules in the parent POM is to specify which child projects belong to the multi-module build. This allows the parent POM to manage the build for all the child projects and ensure that they are built in the correct order.
+
+- By specifying the modules in the parent POM, you are essentially creating a hierarchy of projects with a clear parent-child relationship. The child projects inherit the dependencies and plugins defined in the parent POM, and they can also override or add to these settings if needed.
+
+- Defining modules is an essential part of the project aggregation process because it allows the parent POM to manage the build for all the child projects and ensure that they are built in the correct order. Without this hierarchy, it would be difficult to manage the dependencies and plugins for all the child projects, and the build process would become more complex.
 
 
 
