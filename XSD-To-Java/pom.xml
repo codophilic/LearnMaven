@@ -1,0 +1,29 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>Xsd-to-Java</groupId>
+  <artifactId>Xsd-to-Java</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <build>
+	  <plugins>
+		  <plugin>
+		<!-- https://mvnrepository.com/artifact/org.codehaus.mojo/jaxb2-maven-plugin , this plugin defaults sets itself as maven generate resourcs-->
+			    <groupId>org.codehaus.mojo</groupId>
+			    <artifactId>jaxb2-maven-plugin</artifactId>
+			    <version>3.1.0</version>
+			    <executions>
+					<execution>
+						<id>xsd-to-Java</id>
+						<goals>
+							<goal>xjc</goal>
+						</goals>
+					</execution>
+				</executions>
+					<configuration>
+						<packageName>io.codejournal.maven.xsd2java</packageName>
+					</configuration>
+		  </plugin>
+	  </plugins>
+  </build>
+  
+</project>
