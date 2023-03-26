@@ -151,10 +151,150 @@
   </dependency>
 </dependencies>
 ```
+## Categories in POM
 
+![](https://github.com/codophilic/LearnMaven/blob/main/Images/16.jpg)
 
+### 1. Relationships
 
+- POM relationships is its handling of project relationships, this includes dependencies (and transitive dependencies), inheritance, and aggregation (multi-module projects).
 
+- POM relationships are important because they allow developers to manage dependencies and other project configurations in a centralized way. By defining common configuration in a parent POM, developers can easily share and reuse that configuration across multiple child projects. This helps to maintain consistency and reduce redundancy in Maven projects
+
+1. *Maven Coordinates* : In Maven, a project is identified using a unique set of coordinates, which are called Maven coordinates. Maven coordinates are required because they provide a standard way of identifying and referencing a project or module, which is essential for dependency management. When a project has dependencies on other projects or modules, it needs to know their Maven coordinates in order to download and use them. Maven coordinates consist of three parts:
+
+A. Group ID: A unique identifier for a group of related projects. Typically, this is based on the organization name or domain name of the project.Note that the dot-notated groupId does not have to correspond to the package structure that the project contains.
+
+B. Artifact ID: The name of the project or module.
+
+C. Version: The version of the project or module.
+
+![](https://github.com/codophilic/LearnMaven/blob/main/Images/17.jpg)
+
+2. *Multi-Module*: Project Aggregation
+
+3. *Inheritance*: Project Inheritance
+
+4. *Dependencies* : The cornerstone of the POM is its dependency list. Most projects depend on others to build and run correctly. 
+
+### 2. General Project Information
+
+1. *General* : Tells about project information.
+
+![](https://github.com/codophilic/LearnMaven/blob/main/Images/18.jpg)
+
+2. *license* : In Maven, a project license is an important piece of metadata that describes the legal terms and conditions under which the project and its dependencies are made available to end-users. It is required to provide a clear understanding of the rights and restrictions associated with using the project. A license is typically specified in the POM file of a Maven project using the <licenses> element. It contains information such as the license name, URL, and distribution terms. Maven supports a wide range of licenses, such as Apache License, GPL, MIT License, and many others.
+
+![](https://github.com/codophilic/LearnMaven/blob/main/Images/19.jpg)
+
+3. *Organization* : Provide organization name
+
+![](https://github.com/codophilic/LearnMaven/blob/main/Images/20.jpg)
+
+4. *Developers* : In Maven, developers refer to the individuals or organizations who contribute to a project. The developers section in the POM file is used to provide information about the people who have contributed to the project, such as their names, email addresses, and roles. The developers section is used for documentation purposes and provides information about who has contributed to the project, so it's useful for others who want to know more about the project and its contributors. Additionally, it can be used for communication purposes as well, such as to contact the developers in case of issues or to ask for contributions.
+
+![](https://github.com/codophilic/LearnMaven/blob/main/Images/21.jpg)
+
+5. *Contributers* : In Maven, contributors refer to the individuals or entities that have contributed to the development of a project. They may have contributed code, documentation, bug reports, or other forms of support. The contributors section in the project's POM file is used to list the contributors and their respective roles in the project.
+
+![](https://github.com/codophilic/LearnMaven/blob/main/Images/22.jpg)
+
+## 3. Build Settings
+
+- In Maven, the build settings define how the project should be built, packaged, and deployed. These settings are specified in the project's POM (Project Object Model) file and include information such as the project's source code location, the project's output directory, the plugins that should be used during the build process, and other configuration settings.
+
+- Build settings are important because they allow you to specify how your project should be built in a standardized way. This makes it easier for other developers to build and contribute to your project, as they don't need to understand the specifics of how your build process works. It also allows you to automate your build process and easily deploy your application to different environments.
+
+- Inside `<build></build>` all build related configuration are mentioned in it.
+
+![](https://github.com/codophilic/LearnMaven/blob/main/Images/23.jpg)
+
+1. *Directories* 
+- The source code directory : This specifies the location of your project's source code.
+
+- The output directory: This specifies where the compiled class files and other build artifacts should be placed.
+
+- The project dependencies: This specifies the other Maven artifacts that your project depends on.
+
+- The plugins to use during the build: This specifies the plugins that should be used during the build process to perform tasks such as compiling code, generating documentation, and packaging the project.
+
+![](https://github.com/codophilic/LearnMaven/blob/main/Images/24.jpg)
+
+2. *Extension* :  In Maven, extensions are used to enhance or modify the build process beyond the standard functionality provided by Maven plugins. Extensions can provide additional capabilities to the build process, such as custom packaging types, custom lifecycles, or custom repository layouts.
+
+- Extensions can be used to integrate third-party tools or libraries that are not available as Maven plugins, or to extend the functionality of existing plugins. They can be developed by the community or by the project team itself to suit specific needs.
+
+- Example, if there are artifacts which is not present in the central repository of maven and present in other central repository , we can use extension to get those artifacts.
+
+![](https://github.com/codophilic/LearnMaven/blob/main/Images/25.jpg)
+
+3. *Resources* : In Maven, resources refer to any non-Java files such as configuration files, properties files, XML files, images, etc. that are required for a project. These resources are usually placed in a specific folder in the project structure, typically under src/main/resources or src/test/resources.
+
+- Maven allows you to include resources in your project by adding them to the resources section in the POM file. You can specify the location of the resource files, and Maven will automatically copy them to the appropriate output directory during the build process.
+
+- Resources can be useful for storing configuration files, properties files, and other data files that are required for your application to run. By including them in your Maven project, you ensure that they are always available to your application, regardless of the environment in which it is deployed.
+
+![](https://github.com/codophilic/LearnMaven/blob/main/Images/26.jpg)
+
+4. *Reporting* : In Maven, reporting is a feature that allows you to generate various types of reports about your project, such as code coverage reports, test reports, dependency reports, and many others. These reports provide insights into different aspects of your project and can be used for various purposes, such as monitoring project health, identifying areas for improvement, and communicating project status to stakeholders.
+
+- Reporting in Maven is achieved through the use of plugins that are specifically designed to generate reports. These plugins are executed during the build process and produce reports in various formats, such as HTML, XML, or PDF.
+
+- The reporting feature is useful because it allows you to easily generate and share project reports with your team or stakeholders, without having to manually gather and analyze data. Additionally, the reports can be configured to suit your specific needs, allowing you to focus on the aspects of your project that are most important to you.
+
+![](https://github.com/codophilic/LearnMaven/blob/main/Images/27.jpg)
+
+## 4. Build Environment
+
+- The Build Environment in Maven refers to the configuration of the environment in which the Maven build runs. This includes various aspects such as the Java version, the operating system, the build tool version, etc.
+
+- Maven provides several mechanisms to configure the build environment, such as the <build> section of the POM file, the use of profiles, and the use of system properties. These mechanisms can be used to specify various settings such as the Java compiler version, the target Java runtime version, the location of external tools, and so on.
+
+- The Environment for production and development will be different , so accordingly thier build configuration will also vary.
+
+1. *Issue Management* : Issue management is a feature in Maven that helps to track and manage issues related to a project. Issues can be anything related to the project such as bugs, feature requests, or other improvements.
+
+- The `<issueManagement>` element in the POM file is used to specify the issue tracking system that the project uses. It contains the URL of the issue tracking system and the name of the project in the system.
+
+- For example, if a project uses JIRA/BugZilla for issue tracking, the `<issueManagement>` section of the POM file can be configured.
+
+![](https://github.com/codophilic/LearnMaven/blob/main/Images/28.jpg)
+
+2. *CI management* : CI (Continuous Integration) Management is a process of automating the build and testing of code changes on a continuous basis. In Maven, it refers to the integration of the project with a CI tool to facilitate the continuous integration process.
+
+- CI Management is required to ensure that the code changes made by developers are continuously integrated and tested in a shared environment. This helps to identify issues early on in the development process and allows for faster feedback, making it easier to fix issues before they become more difficult and costly to address.
+
+- There are several CI tools available that can be integrated with Maven, including Jenkins, Travis CI, and CircleCI. These tools can be used to automate the build and testing process and can be configured to run builds automatically whenever code changes are pushed to the repository.
+
+![](https://github.com/codophilic/LearnMaven/blob/main/Images/29.jpg)
+
+3. *Mailing List* : Maven's mailing list configuration is only used for subscribing to a mailing list or a group of people interested in a particular topic related to the project. Once subscribed, users can send and receive emails related to the topic of the mailing list. However, it does not send automatic mails to the users.
+
+- A mailing list is a way for the end-users of an application to communicate with the development team, or with other users of the application. It can be used for support requests, bug reports, feature requests, and general discussion about the application.
+
+![](https://github.com/codophilic/LearnMaven/blob/main/Images/30.jpg)
+
+4. *SCM* : Source Code Management
+
+![](https://github.com/codophilic/LearnMaven/blob/main/Images/31.jpg)
+
+5. *Pre-Requisite* : This section allows use to defined certain pre-requisite conditions which is not met then the build will failed.
+
+![](https://github.com/codophilic/LearnMaven/blob/main/Images/32.jpg)
+
+6. *Repositories*  : This stores the artifect which is fetch from the maven central repositories if its not available in the local repositories. This can be useful when artifacts are not in central maven repositories.
+
+![](https://github.com/codophilic/LearnMaven/blob/main/Images/33.jpg)
+
+7. *Distributed Management* : Distributed management in the Maven environment refers to the ability to manage dependencies and artifacts across multiple repositories and servers. This is important when dealing with large-scale projects that require the use of a variety of dependencies and libraries.
+
+- In a distributed environment, different teams or individuals may be responsible for maintaining different parts of a project, and each team may have its own repository or server for storing artifacts. Maven allows for the coordination of these different repositories and servers, allowing for seamless integration and sharing of dependencies between teams.
+
+![](https://github.com/codophilic/LearnMaven/blob/main/Images/34.jpg)
+
+8. *Profiles* : Maven Profiles are seggration of builds specific to the environments like test build in local system and deploying build in production , these seems to have different profiles.
+
+![](https://github.com/codophilic/LearnMaven/blob/main/Images/35.jpg)
 
 
 
