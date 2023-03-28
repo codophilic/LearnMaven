@@ -1,0 +1,24 @@
+{
+  "type" : "object",
+  "id" : "urn:jsonschema:Employee:Employee",
+  "properties" : {
+    "id" : {
+      "type" : "string"
+    },
+    "name" : {
+      "type" : "string"
+    },
+    "dept" : {
+      "type" : "object",
+      "id" : "urn:jsonschema:Department:Department",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

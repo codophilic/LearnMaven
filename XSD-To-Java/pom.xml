@@ -4,6 +4,21 @@
   <artifactId>Xsd-to-Java</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
+ <properties>
+	 <java.version>11</java.version>
+	 <maven.compiler.source>${java.version}</maven.compiler.source>
+	 <maven.complier.target>${java.version}</maven.complier.target>
+ </properties>
+ 
+ <dependencies>
+	 <!-- https://mvnrepository.com/artifact/jakarta.xml.bind/jakarta.xml.bind-api -->
+		<dependency>
+		    <groupId>jakarta.xml.bind</groupId>
+		    <artifactId>jakarta.xml.bind-api</artifactId>
+		    <version>4.0.0</version>
+		</dependency>
+ </dependencies>
+  
   <build>
 	  <plugins>
 		  <plugin>

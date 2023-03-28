@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>JsontoJava</groupId>
+  <artifactId>JsontoJava</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <dependencies>
+	  <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-databind</artifactId>
+		    <version>2.14.2</version>
+		</dependency>
+  </dependencies>
+  
+  <build>
+	  <plugins>
+		  <plugin>
+		    <groupId>org.jsonschema2pojo</groupId>
+		    <artifactId>jsonschema2pojo-maven-plugin</artifactId>
+		    <version>1.2.1</version>
+		    <configuration>
+		        <sourceDirectory>${basedir}/src/main/resources/schemas</sourceDirectory>
+		        <targetPackage>JsontoJava</targetPackage>
+		    </configuration>
+		    <executions>
+		        <execution>
+		            <goals>
+		                <goal>generate</goal>
+		            </goals>
+		        </execution>
+		    </executions>
+		</plugin>
+	  </plugins>
+  </build>
+  
+</project>
