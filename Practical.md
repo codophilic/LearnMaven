@@ -327,3 +327,62 @@ When you run the `mvn install` command, Maven executes the Default lifecycle and
 - The use of `setUp()` and `tearDown()` methods helps to ensure that each test method is executed in isolation and does not depend on the state of other tests. This can help to prevent bugs and make it easier to debug failing tests.
 
 - If there are mutliple test methods defined in the test class, multiple times the `setUp()` and `tearDown()` method will instantiated. 
+
+### Junit (Java Unit)
+
+- JUnit is a popular open-source unit testing framework for Java programming language. It provides a set of annotations, assertions, and other tools to help developers write and run repeatable automated tests for their Java code.
+
+- JUnit is widely used in the industry to automate the testing of individual units of code, such as methods or functions, and to ensure that they work as intended. This helps developers catch bugs and issues early in the development process, before they can cause problems in production environments.
+
+- By default, the surefire-plugin uses JUnit 4 as the testing framework. If you have only JUnit 5 tests in your project and you don't specify the JUnit 5 engine as a dependency for the surefire-plugin, the plugin will not be able to find any tests to execute and will report an error.
+
+- To avoid this error, you should specify the JUnit 5 engine as a dependency for the surefire-plugin. This can be done by adding the junit-platform-surefire-provider or junit-jupiter-engine dependency to the surefire-plugin configuration in the pom.xml file.
+
+
+```
+<build>
+  <plugins>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-surefire-plugin</artifactId>
+      <version>3.0.0-M5</version>
+      <dependencies>
+        <dependency>
+          <groupId>org.junit.platform</groupId>
+          <artifactId>junit-platform-surefire-provider/junit-jupiter-engine</artifactId>
+          <version>1.7.2</version>
+        </dependency>
+      </dependencies>
+    </plugin>
+  </plugins>
+</build>
+
+```
+
+- Here, we are specifying the JUnit 5 engine as a dependency for the surefire-plugin. This is necessary because the surefire-plugin needs to know which testing framework to use to execute the tests.
+
+- By adding the JUnit 5 engine as a dependency of the surefire-plugin, we ensure that the plugin has access to the necessary classes and resources to execute JUnit 5 tests. Without this dependency, the surefire-plugin would not be able to execute JUnit 5 tests.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
