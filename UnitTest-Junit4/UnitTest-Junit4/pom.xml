@@ -14,6 +14,33 @@
 		</dependency>
 
   </dependencies>
+
+<!--
+    In this example, there are two plugins defined inside the <plugins> section under <build>:
+
+1. maven-compiler-plugin: This plugin is used to compile the source code of the project. 
+It is configured to use Java 1.8 as both the source and target version.The source and target versions in the maven-compiler-plugin 
+configuration refer to the version of Java syntax that the compiler should recognize and generate bytecode for.
+
+By default, the maven-compiler-plugin uses the Java version detected by Maven, which may be based on the JAVA_HOME 
+environment variable or the java.home system property. However, you can explicitly specify a different Java version using the source 
+and target configuration options.
+
+For example, if you specify source and target as 1.8, the compiler will use Java 8 syntax and generate bytecode that is compatible with Java 8. 
+This means that if you try to run the generated code on a machine with an earlier version of Java, you may encounter runtime errors due 
+to features that were introduced in Java 8 and are not available in earlier versions(8+).
+
+
+
+2. maven-surefire-plugin: This plugin is used to run unit tests during the build process. 
+It is configured to use version 3.0.0.
+
+Both plugins have default goals, which will be executed during the build lifecycle when the relevant phase is reached. 
+For example, the maven-compiler-plugin will be executed during the compile phase, while the maven-surefire-plugin will
+ be executed during the test phase.
+-->
+
+
     <build>
     <plugins>
 		

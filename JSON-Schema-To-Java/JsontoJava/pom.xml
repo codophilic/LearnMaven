@@ -13,6 +13,26 @@
 		</dependency>
   </dependencies>
   
+
+<!--
+
+groupId: The group ID of the plugin being used.
+
+artifactId: The artifact ID of the plugin being used.
+
+version: The version of the plugin being used.
+
+configuration: This is the configuration section where we can define the input source and output target for the plugin. 
+In this case, it is defining the source directory of the JSON schemas and the target package where the generated Java classes will be placed.
+
+executions: This section defines the goals to be executed during the build process. In this case, there is only one execution and the goal 
+being executed is 'generate'.
+
+So, in summary, this plugin (jsonschema2pojo-maven-plugin) is used to generate Java classes from JSON schemas. 
+The input source is defined using the sourceDirectory attribute in the configuration section and the target package 
+is defined using the targetPackage attribute. Finally, during the build process, the 'generate' goal is executed using the execution section.
+-->
+
   <build>
 	  <plugins>
 		  <plugin>
@@ -21,7 +41,7 @@
 		    <version>1.2.1</version>
 		    <configuration>
 		        <sourceDirectory>${basedir}/src/main/resources/schemas</sourceDirectory>
-		        <targetPackage>JsontoJava</targetPackage>
+		        <targetPackage>JsontoJava</targetPackage> <!--Output Directory for schema binding files-->
 		    </configuration>
 		    <executions>
 		        <execution>

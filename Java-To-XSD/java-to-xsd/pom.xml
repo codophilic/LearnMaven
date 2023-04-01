@@ -4,6 +4,18 @@
   <artifactId>java-to-xsd</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
+<!--
+	The execution element is used to define a specific execution of the plugin, which in this case is identified by the id element 
+	"XSD-Schema-Generator". Within the execution element, the goals element specifies which goal of the plugin should be executed, 
+	in this case "schemagen".
+
+	Note that in this example, no additional configuration is provided beyond the default settings for the jaxb2-maven-plugin.
+	the schemagen goal of the jaxb2-maven-plugin plugin generates an XML schema from Java classes. If you execute this goal without any configuration, 
+	it will use the default values for the source and output directories, and it will scan all Java classes in the default package and generate an XML schema for each of them.
+
+    However, you can still override the default configurations if needed. For example, if you want to generate an XML schema for a specific package, you can add a configuration block to the execution block of the schemagen goal and specify the package name.
+-->
+
   <build>
 	  <plugins>
 		  <plugin>

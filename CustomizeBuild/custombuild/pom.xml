@@ -10,6 +10,39 @@
   Apart from execution there are other several ways https://www.baeldung.com/maven-ant-task
   (Right Click on project->run as maven clean)
    -->
+
+   <!-- Overview of the plugin below
+   
+   In this example, we are using the maven-antrun-plugin to execute an Ant target during the pre-clean phase of the build process. Here is a breakdown of the different parts of the example:
+
+	<build>: This tag defines the build configuration for the project.
+
+	<plugins>: This tag contains a list of plugins that will be used during the build process.
+
+	<plugin>: This tag defines a plugin that will be used during the build process. In this case, we are using the maven-antrun-plugin.
+
+	<groupId>, <artifactId>, and <version>: These tags specify the Maven coordinates of the maven-antrun-plugin that we are using.
+
+	<executions>: This tag contains a list of executions that will be performed for the plugin. In this example, we only have one execution.
+
+	<execution>: This tag defines an execution of the plugin. In this case, we are defining an execution with an ID of echo-pre-clean that will be run during the pre-clean phase of the build process.
+
+	<phase>: This tag specifies the phase of the build process during which the execution should be run. In this example, we are running the execution during the pre-clean phase.
+
+	<goals>: This tag contains a list of goals that will be executed for the plugin during the specified phase. In this example, we are only running one goal, which is the run goal.
+
+	<configuration>: This tag contains the configuration for the execution of the plugin. In this example, we are configuring an Ant target to be executed during the execution of the plugin.
+
+	<target>: This tag defines an Ant target that will be executed during the execution of the plugin. (https://ant.apache.org/manual/targets.html)
+
+	<echo>: This tag is an Ant task that is being used to print a message to the console during the execution of the target.
+
+	So, in summary, this example is using the maven-antrun-plugin to execute an Ant target that will print a message to the console during the pre-clean phase of the build process. The message that will be printed is "Hello this is pre-clean phase".
+
+   -->
+
+
+
 <build>
 	<plugins>
 		<plugin>

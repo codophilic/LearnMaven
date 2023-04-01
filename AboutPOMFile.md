@@ -296,8 +296,41 @@ C. Version: The version of the project or module.
 
 ![](https://github.com/codophilic/LearnMaven/blob/main/Images/35.jpg)
 
+## More about Plugins
 
+- In a Maven plugin's `<execution>` element, you specify the goals that you want to execute during the build, and any necessary configuration for those goals in the `<configuration>` element.
 
+- The goals element specifies the Maven plugin's goal(s) that should be executed during the build. For example, in the `json-schema-generator-maven-plugin` ( under Java-JSON-Schema folder ) example, the `generate-json-schemas` goal is executed during the `prepare-package` phase.
+
+- The configuration element allows you to pass configuration parameters to the goal. These parameters can be used to control the behavior of the goal, such as specifying which classes should have JSON schemas generated for them.
+
+- So, in summary, you define a specific configuration of a Maven plugin by specifying its `<execution>` element. Within the `<execution>` element, you specify the goals that should be executed, and provide any necessary configuration for those goals in the `<configuration>` element.
+
+- In some cases, the plugin may have sensible defaults that work well without any configuration specified, so omitting the `<configuration>` element will work fine. In other cases, the plugin may require certain configuration to be specified, and will fail if that configuration is not provided.
+
+- For example, in the `json-schema-generator-maven-plugin` example we looked at earlier, the `<configuration>` element includes an `<includes>` element specifying which classes should have JSON schemas generated for them. If you were to omit this `<configuration>` element, the plugin would likely fail, as it wouldn't know which classes to generate schemas for.
+
+- It's always a good idea to check the documentation for the plugin you're using to see if any configuration is required or recommended. If in doubt, it's often better to provide some configuration (even if it's just the minimum required) rather than omitting it entirely, to avoid any unexpected failures during the build.
+
+- A plugin can have multiple goals, and each goal can be executed separately. In Maven, you can execute a specific goal of a plugin using the syntax `mvn <plugin-name>:<goal-name>`.
+
+- For example, if you have a plugin called **my-plugin** with two goals, *goal-1* and *goal-2*, you can execute *goal-1* with the command mvn `my-plugin:goal-1`, and execute *goal-2* with `mvn my-plugin:goal-2`.
+
+- In a Maven build, you can specify which goals should be executed as part of an execution block for a plugin. However, you can also execute goals outside of an execution block by running them directly from the command line.
+
+- Maven automatically assigns a default phase for a plugin based on the plugin's packaging and lifecycle bindings.
+
+- The default phase bindings for each plugin can be found in the plugin's documentation or in the Maven Central Repository. You can also override the default phase binding for a plugin by explicitly specifying a phase element in the plugin's configuration.
+
+- For example, If you don't explicitly specify a phase for the maven-surefire-plugin, it will be executed during the test phase by default. This is because the maven-surefire-plugin is primarily used to execute tests and the test phase is where all the tests are executed.
+
+- Similarly, other plugins might also have default phases assigned to them, but it's a good practice to explicitly mention the phase in which you want a plugin to execute to avoid any confusion or unexpected behavior.
+
+- The `targetPackage` configuration option in Maven plugins is used to specify the package name under which the generated Java classes should be placed. It is used by plugins that generate Java code from other sources such as XSD or JSON schema files.
+
+- On the other hand, the `outputDirectory` configuration option specifies the directory where the compiled classes should be placed. This directory is usually target/classes by default, but can be changed to any other directory using the outputDirectory configuration option.
+
+-  `<packageName>` and `<targetPackage` serve the same purpose of specifying the package name for the generated classes, but `<packageName>` is used within the `jaxb2-maven-plugin` (XSD-to-Java) configuration while `<targetPackage>` is used within the `schema's` (JSON-Schema-To-Java) binding file.
 
 
 

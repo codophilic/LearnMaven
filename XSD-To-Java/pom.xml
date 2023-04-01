@@ -18,7 +18,38 @@
 		    <version>4.0.0</version>
 		</dependency>
  </dependencies>
-  
+  <!--
+
+
+	This Maven build configuration defines a plugin called jaxb2-maven-plugin which is used to generate Java classes 
+	from an XML schema definition (XSD) file. Here is a breakdown of the configuration:
+
+	<groupId>org.codehaus.mojo</groupId>: The Maven Group ID of the plugin.
+
+	<artifactId>jaxb2-maven-plugin</artifactId>: The Maven Artifact ID of the plugin.
+
+	<version>3.1.0</version>: The version of the plugin that should be used.
+
+	<executions>: This section defines the list of plugin executions. Here we define one execution of the plugin.
+
+	<execution>: Each execution is defined by an execution element.
+
+	<id>xsd-to-Java</id>: This specifies an identifier for the execution.
+
+	<goals>: This section specifies the goals (or tasks) that are executed for this execution. 
+	Here we have specified xjc goal which is used to generate Java classes from XSD.
+
+	<goal>xjc</goal>: This specifies the xjc goal of the plugin which generates Java classes from an XSD file.
+
+	<configuration>: This section allows you to specify configuration options for the plugin.
+
+	<packageName>generated</packageName>: This specifies the package name for the generated Java classes. Creates folder and placed files inside
+	that generated folder package.
+
+	Overall, this configuration specifies that the jaxb2-maven-plugin should be executed once during the 
+	build process, and generate Java classes from an XSD file, with the package name generated.
+
+  -->
   <build>
 	  <plugins>
 		  <plugin>
@@ -35,7 +66,7 @@
 					</execution>
 				</executions>
 					<configuration>
-						<packageName>io.codejournal.maven.xsd2java</packageName>
+						<packageName>generated</packageName>
 					</configuration>
 		  </plugin>
 	  </plugins>

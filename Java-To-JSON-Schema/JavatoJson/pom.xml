@@ -4,6 +4,20 @@
   <artifactId>JavatoJson</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
+
+<!--
+  <executions>: This is the list of executions to be performed for the plugin. An execution is a specific configuration of the plugin that is run at a specific phase in the Maven build lifecycle.
+
+<execution>: This is a specific execution of the plugin that is defined within the <executions> element. Each execution has its own configuration and set of goals to be executed.
+
+<phase>: This is the Maven build lifecycle phase in which the execution should be run. In this case, the plugin will be executed during the prepare-package phase, which occurs just before the project is packaged for distribution.
+
+<goals>: This is the list of goals to be executed for the execution. In this case, the generate-json-schemas goal will be executed.
+
+<configuration>: This is the configuration for the execution. In this case, the includes element is used to specify which classes should have JSON schemas generated for them. The **/*.class pattern will match any .class file in any directory within the project
+-->
+
+
 <build>
  <plugins>
   

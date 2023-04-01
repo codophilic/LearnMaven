@@ -45,7 +45,14 @@
 		        </execution>
 		      </executions>
     </plugin>
-    
+    <!--
+      The maven-surefire-report-plugin plugin does not have an explicit execution phase defined in the 
+      example configuration you provided. Therefore, it will not bind to any specific lifecycle phase by default.
+
+      However, the plugin is typically used in the post-integration-test phase to generate a report of the 
+      test results after the tests have been executed. You can manually bind the plugin to a specific phase by adding an 
+      <executions> section with an <execution> element specifying the desired phase.
+      -->
     <plugin>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-surefire-report-plugin</artifactId>
