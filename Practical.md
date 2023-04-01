@@ -428,7 +428,45 @@ When you run the `mvn install` command, Maven executes the Default lifecycle and
 
 5. Advanced Reporting: TestNG provides detailed HTML reports with graphs and charts that make it easy to analyze test results. JUnit only provides basic reports.
 
+## Running Test Configuration using Surefire plugin
 
+1. **Skipping Test** : In Maven Surefire plugin, "skipping tests" means that the plugin will not execute the tests that have been specified in the POM (Project Object Model) file.
+
+- This can happen for several reasons:
+
+-  The developer explicitly specifies the option to skip tests using the command line option `-DskipTests` or `-Dmaven.test.skip=true`. In this case, Maven will skip all the tests.
+
+- The POM file contains a `<skipTests>` element set to true. This will skip all tests for the project.
+
+- The POM file contains a `<test>` element that points to a specific test file or directory, and that test is excluded from the execution by specifying the `-Dtest` command line option.
+
+- When the tests are skipped, Maven Surefire plugin will not compile or execute any test classes, including custom tests. Therefore, if you have a custom test that you want to exclude from the skip process, you will need to modify the configuration of the Surefire plugin to exclude the test from being skipped. So suppose the test java files are complied and you just wanted to test those compile class, here we can skip again compilation of those test java files
+
+- If you define the `<skipTests>` configuration inside the `<configuration>` element of an `<execution>`, it will only apply to that specific execution, not to all executions of the `maven-surefire-plugin`.
+
+2. **Including/Excluding Test** : In Maven, you can use the maven-surefire-plugin to include or exclude specific tests from your test suite based on certain criteria.
+
+- You might want to include or exclude tests in the following situations:
+
+1. When you have a large number of tests, and you want to run only a subset of them.
+
+2. When you want to exclude tests that are known to be unstable or have known issues.
+
+3. When you want to run tests for specific parts of your application.
+
+- To include or exclude tests, you can use the `<includes>` and `<excludes>` parameters of the `maven-surefire-plugin` configuration.
+
+3. **Single Test** : In the maven-surefire-plugin, a single test refers to a single method within a test class that is executed as part of a test suite.
+
+- By default, when you run Maven tests with the maven-surefire-plugin, it will execute all test methods in all test classes that match the default naming patterns, such as `**/*Test.java`. However, you can also specify a single test to execute using the test parameter with the fully-qualified name of the test method to execute. Command : `mvn test '-Dtest=/path/to/ClassName#MethodofClass'`. The MethodOfClass can be pattern regex also.
+
+- Lets say if you want to run specific method of same class , we can use command `mvn test -Dtest=ClassName#Method1+Method2`.
+
+- Example `mvn test -Dtest=AddTest#CaseAddition1`  This will execute only the CaseAddition1 method in the AddTest class and skip all other tests in the test suite.
+
+- Using the test parameter to execute a single test is useful when you want to quickly run a specific test to check a particular behavior or to debug a failing test. It is also helpful when you have a large number of tests and you only want to run a specific test without waiting for the entire test suite to complete.
+
+- In Eclipse, Right Click -> Run As -> Run Configuration -> Junit -> ClassName -> browse your method -> Run.
 
 
 

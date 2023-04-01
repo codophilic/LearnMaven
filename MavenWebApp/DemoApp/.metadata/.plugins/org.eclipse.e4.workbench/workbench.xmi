@@ -768,7 +768,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_FiFu4MJ3Ee2lzqIK0p-Waw" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_9dmekMJ3Ee2S5roXhZPlfg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_Ei_FoMJ3Ee2lzqIK0p-Waw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_Ko6nYNBwEe2QKI_zQycGiA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_Ei_FoMJ3Ee2lzqIK0p-Waw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_FiFu4cJ3Ee2lzqIK0p-Waw" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -805,7 +805,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_FiFu6MJ3Ee2lzqIK0p-Waw" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_9dmencJ3Ee2S5roXhZPlfg" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_Ei_FScJ3Ee2lzqIK0p-Waw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_KpHbsNBwEe2QKI_zQycGiA" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_Ei_FScJ3Ee2lzqIK0p-Waw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_FiFu6cJ3Ee2lzqIK0p-Waw" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -1108,6 +1108,10 @@
     <bindings xmi:id="_EjVonMJ3Ee2lzqIK0p-Waw" keySequence="ALT+SHIFT+D O" command="_Ei_Eg8J3Ee2lzqIK0p-Waw"/>
     <bindings xmi:id="_EjVoncJ3Ee2lzqIK0p-Waw" keySequence="ALT+SHIFT+D P" command="_Ei_Fm8J3Ee2lzqIK0p-Waw"/>
     <bindings xmi:id="_EjVonsJ3Ee2lzqIK0p-Waw" keySequence="ALT+SHIFT+D Q" command="_Ei_EMcJ3Ee2lzqIK0p-Waw"/>
+    <bindings xmi:id="_JXmJcNBwEe2QKI_zQycGiA" keySequence="ALT+SHIFT+X G" command="_JXJdgtBwEe2QKI_zQycGiA"/>
+    <bindings xmi:id="_JXmJcdBwEe2QKI_zQycGiA" keySequence="ALT+SHIFT+X N" command="_JXJdg9BwEe2QKI_zQycGiA"/>
+    <bindings xmi:id="_JXmJctBwEe2QKI_zQycGiA" keySequence="ALT+SHIFT+D G" command="_JXJdhdBwEe2QKI_zQycGiA"/>
+    <bindings xmi:id="_JXmJc9BwEe2QKI_zQycGiA" keySequence="ALT+SHIFT+D N" command="_JXJdgdBwEe2QKI_zQycGiA"/>
   </bindingTables>
   <bindingTables xmi:id="_EjL2qMJ3Ee2lzqIK0p-Waw" elementId="org.eclipse.datatools.sqltools.SQLEditorScope" bindingContext="_EjIMSMJ3Ee2lzqIK0p-Waw">
     <bindings xmi:id="_EjL2qcJ3Ee2lzqIK0p-Waw" keySequence="CTRL+SHIFT+P" command="_Ei_FPsJ3Ee2lzqIK0p-Waw"/>
@@ -1497,28 +1501,28 @@
   <rootContext xmi:id="_Fks-AMJ3Ee2lzqIK0p-Waw" elementId="org.eclipse.wst.server.ui.internal.webbrowser.actionSet" name="Auto::org.eclipse.wst.server.ui.internal.webbrowser.actionSet"/>
   <rootContext xmi:id="_Fks-AsJ3Ee2lzqIK0p-Waw" elementId="org.eclipse.wst.web.ui.wizardsActionSet" name="Auto::org.eclipse.wst.web.ui.wizardsActionSet"/>
   <rootContext xmi:id="_Fks-BMJ3Ee2lzqIK0p-Waw" elementId="org.eclipse.wst.ws.explorer.explorer" name="Auto::org.eclipse.wst.ws.explorer.explorer"/>
-  <descriptors xmi:id="_9TpRXsJ3Ee2S5roXhZPlfg" elementId="org.eclipse.pde.spy.preferences.parts.PreferenceSpyPart" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences" label="Preference Spy" iconURI="platform:/plugin/org.eclipse.pde.spy.preferences/$nl$/icons/preference_spy.png" closeable="true" contributionURI="bundleclass://org.eclipse.pde.spy.preferences/org.eclipse.pde.spy.preferences.parts.PreferenceSpyPart" description="Spy to display preferences">
+  <descriptors xmi:id="_J8MEQNBwEe2QKI_zQycGiA" elementId="org.eclipse.pde.spy.preferences.parts.PreferenceSpyPart" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences" label="Preference Spy" iconURI="platform:/plugin/org.eclipse.pde.spy.preferences/$nl$/icons/preference_spy.png" closeable="true" contributionURI="bundleclass://org.eclipse.pde.spy.preferences/org.eclipse.pde.spy.preferences.parts.PreferenceSpyPart" description="Spy to display preferences">
     <persistedState key="perstistState" value="false"/>
     <tags>Spy</tags>
-    <toolbar xmi:id="_9TpRZMJ3Ee2S5roXhZPlfg" elementId="org.eclipse.pde.spy.preferences.toolbar" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences">
-      <children xsi:type="menu:ToolControl" xmi:id="_9TpRZcJ3Ee2S5roXhZPlfg" elementId="org.eclipse.pde.spy.preferences.toolcontrol.layout" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences" contributionURI="bundleclass://org.eclipse.pde.spy.preferences/org.eclipse.pde.spy.preferences.handler.ToggleLayoutControl"/>
-      <children xsi:type="menu:ToolBarSeparator" xmi:id="_9TpRZsJ3Ee2S5roXhZPlfg" elementId="org.eclipse.pde.spy.preferences.toolbarseparator.0" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences"/>
-      <children xsi:type="menu:HandledToolItem" xmi:id="_9TpRZ8J3Ee2S5roXhZPlfg" elementId="org.eclipse.pde.spy.preferences.handledtoolitem.showall" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences" iconURI="platform:/plugin/org.eclipse.pde.spy.preferences/icons/show_all_preferences.png">
+    <toolbar xmi:id="_J8MERtBwEe2QKI_zQycGiA" elementId="org.eclipse.pde.spy.preferences.toolbar" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences">
+      <children xsi:type="menu:ToolControl" xmi:id="_J8MER9BwEe2QKI_zQycGiA" elementId="org.eclipse.pde.spy.preferences.toolcontrol.layout" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences" contributionURI="bundleclass://org.eclipse.pde.spy.preferences/org.eclipse.pde.spy.preferences.handler.ToggleLayoutControl"/>
+      <children xsi:type="menu:ToolBarSeparator" xmi:id="_J8MESNBwEe2QKI_zQycGiA" elementId="org.eclipse.pde.spy.preferences.toolbarseparator.0" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences"/>
+      <children xsi:type="menu:HandledToolItem" xmi:id="_J8MESdBwEe2QKI_zQycGiA" elementId="org.eclipse.pde.spy.preferences.handledtoolitem.showall" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences" iconURI="platform:/plugin/org.eclipse.pde.spy.preferences/icons/show_all_preferences.png">
         <command href="platform:/plugin/org.eclipse.pde.spy.preferences/fragment.e4xmi#_ufxRsHY2EeSuTdKDH5hMwg"/>
       </children>
-      <children xsi:type="menu:ToolControl" xmi:id="_9TpRaMJ3Ee2S5roXhZPlfg" elementId="org.eclipse.pde.spy.preferences.toolcontrol.trace" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences" contributionURI="bundleclass://org.eclipse.pde.spy.preferences/org.eclipse.pde.spy.preferences.handler.TogglePreferenceTraceControl"/>
-      <children xsi:type="menu:ToolBarSeparator" xmi:id="_9TpRacJ3Ee2S5roXhZPlfg" elementId="org.eclipse.pde.spy.preferences.toolbarseparator.1" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences"/>
-      <children xsi:type="menu:HandledToolItem" xmi:id="_9TpRasJ3Ee2S5roXhZPlfg" elementId="org.eclipse.pde.spy.preferences.handledtoolitem.expandall" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences" iconURI="platform:/plugin/org.eclipse.pde.spy.preferences/icons/expandall.png">
+      <children xsi:type="menu:ToolControl" xmi:id="_J8MEStBwEe2QKI_zQycGiA" elementId="org.eclipse.pde.spy.preferences.toolcontrol.trace" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences" contributionURI="bundleclass://org.eclipse.pde.spy.preferences/org.eclipse.pde.spy.preferences.handler.TogglePreferenceTraceControl"/>
+      <children xsi:type="menu:ToolBarSeparator" xmi:id="_J8MES9BwEe2QKI_zQycGiA" elementId="org.eclipse.pde.spy.preferences.toolbarseparator.1" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences"/>
+      <children xsi:type="menu:HandledToolItem" xmi:id="_J8METNBwEe2QKI_zQycGiA" elementId="org.eclipse.pde.spy.preferences.handledtoolitem.expandall" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences" iconURI="platform:/plugin/org.eclipse.pde.spy.preferences/icons/expandall.png">
         <command href="platform:/plugin/org.eclipse.pde.spy.preferences/fragment.e4xmi#_4NM_IH_gEeSk-4v3KnNHPw"/>
       </children>
-      <children xsi:type="menu:HandledToolItem" xmi:id="_9TpRa8J3Ee2S5roXhZPlfg" elementId="org.eclipse.pde.spy.preferences.handledtoolitem.collapseall" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences" iconURI="platform:/plugin/org.eclipse.pde.spy.preferences/icons/collapseall.png">
+      <children xsi:type="menu:HandledToolItem" xmi:id="_J8METdBwEe2QKI_zQycGiA" elementId="org.eclipse.pde.spy.preferences.handledtoolitem.collapseall" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences" iconURI="platform:/plugin/org.eclipse.pde.spy.preferences/icons/collapseall.png">
         <command href="platform:/plugin/org.eclipse.pde.spy.preferences/fragment.e4xmi#_68UQwH_gEeSk-4v3KnNHPw"/>
       </children>
-      <children xsi:type="menu:ToolBarSeparator" xmi:id="_9TpRbMJ3Ee2S5roXhZPlfg" elementId="org.eclipse.pde.spy.preferences.toolbarseparator.2" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences"/>
-      <children xsi:type="menu:HandledToolItem" xmi:id="_9TpRbcJ3Ee2S5roXhZPlfg" elementId="org.eclipse.pde.spy.preferences.handledtoolitem.removeentry" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences" iconURI="platform:/plugin/org.eclipse.pde.spy.preferences/icons/remove_co.png">
+      <children xsi:type="menu:ToolBarSeparator" xmi:id="_J8METtBwEe2QKI_zQycGiA" elementId="org.eclipse.pde.spy.preferences.toolbarseparator.2" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences"/>
+      <children xsi:type="menu:HandledToolItem" xmi:id="_J8MET9BwEe2QKI_zQycGiA" elementId="org.eclipse.pde.spy.preferences.handledtoolitem.removeentry" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences" iconURI="platform:/plugin/org.eclipse.pde.spy.preferences/icons/remove_co.png">
         <command href="platform:/plugin/org.eclipse.pde.spy.preferences/fragment.e4xmi#_iGEkYGxiEeSQ7v0akw7aRA"/>
       </children>
-      <children xsi:type="menu:HandledToolItem" xmi:id="_9TpRbsJ3Ee2S5roXhZPlfg" elementId="org.eclipse.pde.spy.preferences.handledtoolitem.removeall" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences" iconURI="platform:/plugin/org.eclipse.pde.spy.preferences/icons/removeall_co.png">
+      <children xsi:type="menu:HandledToolItem" xmi:id="_J8MEUNBwEe2QKI_zQycGiA" elementId="org.eclipse.pde.spy.preferences.handledtoolitem.removeall" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences" iconURI="platform:/plugin/org.eclipse.pde.spy.preferences/icons/removeall_co.png">
         <command href="platform:/plugin/org.eclipse.pde.spy.preferences/fragment.e4xmi#_eBGTEGxiEeSQ7v0akw7aRA"/>
       </children>
     </toolbar>
@@ -2033,6 +2037,12 @@
     <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.wst.xsl.ui"/>
     <tags>View</tags>
     <tags>categoryTag:XML</tags>
+  </descriptors>
+  <descriptors xmi:id="_KMo7ENBwEe2QKI_zQycGiA" elementId="org.testng.eclipse.ResultView" label="TestNG" iconURI="platform:/plugin/org.testng.eclipse/icons/full/main16/testng_blur.gif" tooltip="" category="Java" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.testng.eclipse.ui.TestRunnerViewPart"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.testng.eclipse"/>
+    <tags>View</tags>
+    <tags>categoryTag:Java</tags>
   </descriptors>
   <trimContributions xmi:id="_2r10UF9tEeO-yojH_y4TJA" elementId="org.eclipse.ui.ide.application.trimcontribution.QuickAccess" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" toBeRendered="false" parentId="org.eclipse.ui.main.toolbar" positionInParent="last">
     <children xsi:type="menu:ToolControl" xmi:id="_76uUAF9tEeO-yojH_y4TJA" elementId="Spacer Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
@@ -3212,6 +3222,15 @@
   <commands xmi:id="_FBrJcsJ3Ee2lzqIK0p-Waw" elementId="AUTOGEN:::org.eclipse.jdt.debug.ui.DisplayViewActions/org.eclipse.jdt.debug.ui.displayViewToolbar.Inspect" commandName="Inspect" description="Inspect Result of Evaluating Selected Text" category="_Ei_CZcJ3Ee2lzqIK0p-Waw"/>
   <commands xmi:id="_FBrJc8J3Ee2lzqIK0p-Waw" elementId="AUTOGEN:::org.eclipse.pde.ui.logViewActions/org.eclipse.jdt.debug.ui.LogViewActions.showStackTrace" commandName="Show Stack Trace in Console View" description="Show Stack Trace in Console View" category="_Ei_CZcJ3Ee2lzqIK0p-Waw"/>
   <commands xmi:id="_FBrJdMJ3Ee2lzqIK0p-Waw" elementId="AUTOGEN:::org.eclipse.ui.articles.action.contribution.view/org.eclipse.wst.wsi.ui.internal.actions.actionDelegates.ValidateWSIProfileActionDelegate" commandName="WS-I Profile Validator" description="Validate WS-I Message Log File" category="_Ei_CZcJ3Ee2lzqIK0p-Waw"/>
+  <commands xmi:id="_JXJdgNBwEe2QKI_zQycGiA" elementId="org.testng.eclipse.createClassAction" commandName="Create TestNG class" description="Create a TestNG class to test this class" category="_Ei_Cc8J3Ee2lzqIK0p-Waw"/>
+  <commands xmi:id="_JXJdgdBwEe2QKI_zQycGiA" elementId="org.testng.eclipse.shortcut.debug" commandName="Debug TestNG Test" description="Debug TestNG Test" category="_Ei_CXcJ3Ee2lzqIK0p-Waw"/>
+  <commands xmi:id="_JXJdgtBwEe2QKI_zQycGiA" elementId="org.testng.eclipse.shortcut.testngSuite.run" commandName="Run TestNG Suite" description="Run TestNG Suite" category="_Ei_CXcJ3Ee2lzqIK0p-Waw"/>
+  <commands xmi:id="_JXJdg9BwEe2QKI_zQycGiA" elementId="org.testng.eclipse.shortcut.run" commandName="Run TestNG Test" description="Run TestNG Test" category="_Ei_CXcJ3Ee2lzqIK0p-Waw"/>
+  <commands xmi:id="_JXJdhNBwEe2QKI_zQycGiA" elementId="org.testng.eclipse.shortcut.rerunFailed" commandName="Rerun Failed TestNG Test" description="Rerun the failed TestNG Test" category="_Ei_CXcJ3Ee2lzqIK0p-Waw"/>
+  <commands xmi:id="_JXJdhdBwEe2QKI_zQycGiA" elementId="org.testng.eclipse.shortcut.testngSuite.debug" commandName="Debug TestNG Suite" description="Debug TestNG Suite" category="_Ei_CXcJ3Ee2lzqIK0p-Waw"/>
+  <commands xmi:id="_JXJdhtBwEe2QKI_zQycGiA" elementId="org.testng.eclipse.shortcut.rerunLast" commandName="Rerun TestNG Test" description="Rerun the last TestNG Test" category="_Ei_CXcJ3Ee2lzqIK0p-Waw"/>
+  <commands xmi:id="_JXJdh9BwEe2QKI_zQycGiA" elementId="org.testng.eclipse.convertToYamlAction" commandName="Convert to YAML" description="Convert the TestNG Suite XML file to YAML" category="_Ei_CZcJ3Ee2lzqIK0p-Waw"/>
+  <commands xmi:id="_JXJdiNBwEe2QKI_zQycGiA" elementId="org.testng.eclipse.convertAction" commandName="Convert to TestNG" description="Convert the selection to TestNG" category="_Ei_Cc8J3Ee2lzqIK0p-Waw"/>
   <addons xmi:id="_EimAzsJ3Ee2lzqIK0p-Waw" elementId="org.eclipse.e4.core.commands.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_EimAz8J3Ee2lzqIK0p-Waw" elementId="org.eclipse.e4.ui.contexts.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_EimA0MJ3Ee2lzqIK0p-Waw" elementId="org.eclipse.e4.ui.bindings.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
@@ -3223,7 +3242,7 @@
   <addons xmi:id="_EimA1sJ3Ee2lzqIK0p-Waw" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_EimA18J3Ee2lzqIK0p-Waw" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_EivKsMJ3Ee2lzqIK0p-Waw" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_9TzCZMJ3Ee2S5roXhZPlfg" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_Ei_CUMJ3Ee2lzqIK0p-Waw" elementId="org.eclipse.ui.category.edit" name="Edit"/>
   <categories xmi:id="_Ei_CUcJ3Ee2lzqIK0p-Waw" elementId="org.eclipse.mylyn.wikitext.ui.editor.category" name="WikiText Markup Editing Commands" description="commands for editing lightweight markup"/>

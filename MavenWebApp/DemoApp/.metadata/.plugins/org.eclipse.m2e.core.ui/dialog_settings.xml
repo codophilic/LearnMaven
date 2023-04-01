@@ -2,8 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
-			<item value="C:\Harsh\LearnMaven\MavenWebApp\DemoApp"/>
 			<item value="C:\Harsh\LearnMaven\MavenWebApp"/>
+			<item value="C:\Harsh\LearnMaven\MavenWebApp\DemoApp"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
