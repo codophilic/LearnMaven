@@ -571,7 +571,27 @@ When you run the `mvn install` command, Maven executes the Default lifecycle and
 
 - Similarly like in Unit Test we can configure multiple things like skipping test, include , exclude test, single test, parelle test and others.
 
+## Code Coverage
 
+- Code coverage in Maven refers to the measure of how much of the source code of a software application is executed during automated testing. It is a metric that helps developers determine how well their automated tests are covering the code, and identify areas of the code that are not being tested.
+
+- Maven provides a plugin called `jacoco-maven-plugin` that can be used to measure code coverage in a Maven-based project. This plugin uses the JaCoCo library to generate code coverage reports in different formats, such as HTML, XML, and CSV.
+
+- To use the `jacoco-maven-plugin`, you need to add the plugin to the plugins section of your Maven `pom.xml` file, along with the configuration settings that specify which classes and tests to include in the coverage analysis, and the output format of the report.
+
+- Once the plugin is configured, you can run your Maven-based tests with the `test` goal, and the plugin will generate a code coverage report based on the results of the tests.
+
+- Code coverage reports can be used to identify areas of the code that are not being tested, and improve the quality of the tests by adding additional test cases or modifying existing ones. Code coverage is just one aspect of software testing, and it should be used in conjunction with other metrics and testing techniques to ensure the quality of the software.
+
+### Difference between Code Coverage & Surefire report
+
+- JaCoCo and Surefire Report plugins are both Maven plugins that generate reports related to software testing, but they have different purposes and generate different types of reports.
+
+- The Surefire Report plugin is used to generate a report on the results of running unit tests in a Maven project. This plugin runs the tests in the project and generates a report in HTML format that shows the results of each test, including whether it passed or failed, how long it took to run, and any error messages or stack traces. The Surefire Report plugin is primarily used to help developers identify which tests have failed and troubleshoot issues with their test code.
+
+- On the other hand, the JaCoCo plugin is used to measure the code coverage of a Maven project, which means it determines how much of the source code is executed during testing. The JaCoCo plugin generates a report in HTML, XML, or CSV format that shows the percentage of code that was executed during testing, as well as details on which lines of code were covered by the tests and which were not. The JaCoCo plugin is primarily used to help developers identify areas of the code that are not being tested and improve the quality of their tests.
+
+- In summary, while both plugins generate reports related to software testing, the Surefire Report plugin focuses on the results of unit tests, while the JaCoCo plugin focuses on measuring code coverage during testing.
 
 
 
