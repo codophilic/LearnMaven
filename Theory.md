@@ -8,7 +8,7 @@
 
 - Maven uses a declarative approach to build configuration, which means that developers only need to specify what they want to build and Maven takes care of the details. For example, developers can define project dependencies in the pom.xml file and Maven will automatically download and manage those dependencies during the build process.
 
-### what are these WAR & JARs?
+### What are these WAR & JARs?
 
 - WAR (Web Application Archive) and JAR (Java Archive) files are typically used for Java-based web applications.
 
@@ -16,7 +16,7 @@
 
 - A JAR file, on the other hand, is a compressed file format used to package Java class files, associated metadata, and other resources required by a Java application. JAR files are used to distribute and share Java libraries or executable Java applications.
 
-- Both WAR and JAR files are created using build tools like Maven or Gradle, which compile source code and package the application into the appropriate file format. The specific file format used depends on the type of application being developed and the deployment environment. For example, a standalone Java application might be packaged as a JAR file, while a web application might be packaged as a WAR file.WAR (Web Application Archive) and JAR (Java Archive) files are typically used for Java-based web applications.
+- Both WAR and JAR files are created using build tools like Maven or Gradle, which compile source code and package the application into the appropriate file format. The specific file format used depends on the type of application being developed and the deployment environment. For example, a standalone Java application might be packaged as a JAR file, while a web application might be packaged as a WAR file. WAR (Web Application Archive) and JAR (Java Archive) files are typically used for Java-based web applications.
 
 
 - J2EE (Java 2 Platform, Enterprise Edition) is a platform for building enterprise-level applications in Java. It provides a set of APIs and services for developing, deploying, and managing distributed, multi-tier applications.
@@ -103,7 +103,7 @@
 
 - The central repository works similarly to Docker Hub, which is a central registry for Docker images. Both repositories provide a centralized location for storing and sharing dependencies and artifacts, and allow developers to easily download and use these dependencies in their projects.
 
-![](https://github.com/codophilic/LearnMaven/blob/main/Images/1.jpg)
+![alt text](https://github.com/codophilic/LearnMaven/blob/main/Images/1.jpg)
 
 - The local repository is located at  `c:\Users\UserID\.m2\repository`.
 
